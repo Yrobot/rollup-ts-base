@@ -1,0 +1,20 @@
+{
+  "name": "rollup-ts-bundler",
+  "version": "0.0.0",
+  "main": "",
+  "exports": {
+    "./file1": "./build/file1.js",
+    "./file2": "./build/file2.js"
+  },
+  "scripts": {
+    "build": "rm -rf ./build & rollup -c ./rollup.config.ts --configPlugin typescript"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "rollup": "^3.18.0",
+    "rollup-plugin-ts": "^3.2.0",
+    "typescript": "^4.9.5"
+  }
+}
